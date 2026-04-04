@@ -129,7 +129,7 @@
         //│  SHIFT   │  Z       │  X       │  C       │  V       │   │          │          │ LEFT     │ DOWN     │ RIGHT    │
            &kp LSHIFT   &kp Z      &kp X      &kp C      &kp V         &trans     &trans      &kp LEFT   &kp DOWN   &kp RIGHT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp Space   &trans        &trans      &trans
+                                            &kp SPACE   &trans        &trans      &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
