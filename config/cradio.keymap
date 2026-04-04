@@ -44,7 +44,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &kp ENTER     &kp SPACE  &lt 1 BSPC
+                                            &lt 2 SPACE &kp TAB       &kp BSPC   &lt 1 ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -86,11 +86,11 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //│ RESET    │          │          │          │PROFILE 0 │   │ WASD     │          │          │          │  RESET   │
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &to 4      &trans     &trans     &trans    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //│BOOTLOADER│          │          │          │PROFILE 1 │   │ Arrows   │          │          │          │BOOTLOADER│
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &to 5      &trans     &trans     &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
@@ -99,5 +99,40 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+	
+	WASD_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  TAB     │  Q       │  W       │  E       │  R       │   │          │          │          │          │          │
+            &kp TAB    &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &to 0
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  SHIFT   │  A       │  S       │  D       │  F       │   │          │          │          │          │          │
+            &kp SHIFT  &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  LCTRL   │  Z       │  X       │  C       │  B       │   │          │          │          │          │          │
+            &kp LCTRL  &kp Z      &kp X      &kp C      &kp B          &trans     &trans     &trans     &trans     &trans 
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                            &kp SPACE   &kp ESC        &trans     &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+	Arrows_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &kp ESC    &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &to 0
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│ CTRL     │  A       │  S       │  D       │  F       │   │          │          │          │  UP      │          │
+           &kp LCTRL   &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &kp UP     &trans
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  SHIFT   │  Z       │  X       │  C       │  V       │   │          │          │ LEFT     │ DOWN     │ RIGHT    │
+           &kp SHIFT   &kp Z      &kp X      &kp C      &kp V         &trans     &trans      &kp LEFT   &kp DOWN   &kp RIGHT
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                            &kp Space   &trans        &trans      &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+	
     };
 };
