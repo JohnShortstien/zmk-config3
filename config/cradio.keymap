@@ -107,7 +107,7 @@
             &kp TAB    &kp Q      &kp W      &kp E      &kp R          &trans     &trans     &trans     &trans     &to 0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  SHIFT   │  A       │  S       │  D       │  F       │   │          │          │          │          │          │
-            &kp SHIFT  &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans 
+            &kp LSHIFT  &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &trans     &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  LCTRL   │  Z       │  X       │  C       │  B       │   │          │          │          │          │          │
             &kp LCTRL  &kp Z      &kp X      &kp C      &kp B          &trans     &trans     &trans     &trans     &trans 
