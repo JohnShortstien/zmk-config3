@@ -123,11 +123,11 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp ESC    &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &to 0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CTRL     │  A       │  S       │  D       │  F       │   │          │          │          │  UP      │          │
-           &kp LCTRL   &kp A      &kp S      &kp D      &kp F          &trans     &trans     &trans     &kp UP     &trans
+        //│ CTRL     │  A       │  S       │  D       │  F       │   │          │          │  UP      │          │          │
+           &kp LCTRL   &kp A      &kp S      &kp D      &kp F          &trans     &trans     &UP        &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  SHIFT   │  Z       │  X       │  C       │  V       │   │          │          │ LEFT     │ DOWN     │ RIGHT    │
-           &kp LSHIFT   &kp Z      &kp X      &kp C      &kp V         &trans     &trans      &kp LEFT   &kp DOWN   &kp RIGHT
+        //│  SHIFT   │  Z       │  X       │  C       │  V       │   │          │  LEFT    │ DOWN     │ RIGHT    │
+           &kp LSHIFT   &kp Z      &kp X      &kp C      &kp V         &trans     &LEFT      &kp DOWN   &kp RIGHT  &kp trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp SPACE   &trans        &trans      &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
