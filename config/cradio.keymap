@@ -127,7 +127,7 @@
            &kp LCTRL   &kp A      &kp S      &kp D      &kp F          &trans     &trans     &kp UP     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  SHIFT   │  Z       │  X       │  C       │  V       │   │          │  LEFT    │ DOWN     │ RIGHT    │
-           &kp LSHIFT   &kp Z      &kp X      &kp C      &kp V         &trans     &LEFT      &kp DOWN   &kp RIGHT  &kp trans 
+           &kp LSHIFT   &kp Z      &kp X      &kp C      &kp V         &trans     &kp LEFT  &kp DOWN   &kp RIGHT  &kp trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp SPACE   &trans        &trans      &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
